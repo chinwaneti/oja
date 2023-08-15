@@ -1,10 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom';
-import Products from './components/Products';
 import Dashboard from './components/Dashboard';
-import { BrowserRouter as Router,  Switch } from 'react-router-dom';
 import Cards from './components/Cards';
 import RouteLayout from './components/RouteLayout';
 import Wallet from './components/Wallet';
