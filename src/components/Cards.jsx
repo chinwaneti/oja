@@ -4,6 +4,8 @@ import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Col from 'react-bootstrap/Col';
 import { remove } from '../store/cartSlice';
+import Checkout from './Checkout';
+import { BsBagDash } from 'react-icons/bs';
 
 export default function Cards() {
   const products = useSelector(state => state.cart);
@@ -27,8 +29,30 @@ export default function Cards() {
   const removeButtonStyle = {
     backgroundColor: '#dc3545',
     borderColor: '#dc3545',
-  
+    color: 'white',
   };
+
+  const checkoutSectionStyle = {
+    backgroundColor: '#f8f9fa',
+    marginTop: '20px',
+    padding: '20px',
+    textAlign: 'center',
+    borderRadius: '10px',
+  };
+
+  const checkoutAmountStyle = {
+    fontSize: '1.5rem',
+    fontWeight: 'bold',
+    marginBottom: '10px',
+  };
+
+  const emptyCartStyle = {
+    fontSize: '1rem',
+    color: 'gray',
+    marginBottom: '10px',
+  };
+
+  const totalAmount = products.reduce((total, product) => total + product.price, 0).toFixed(2);
 
   const cards = products.map(product => (
     <Col key={product.id} md={4} style={cardStyle}>
@@ -41,10 +65,10 @@ export default function Cards() {
           <Card.Text>&#8358;{product.price}</Card.Text>
         </Card.Body>
         <Card.Footer style={{ background: 'white' }}>
+          <Button variant='danger' onClick={() => removeFromCart(product.id)} style={removeButtonStyle}>
+            Remove
+          </Button>
         </Card.Footer>
-        <Button variant='danger' onClick={() => removeFromCart(product.id)} style={removeButtonStyle}>
-          Remove
-        </Button>
       </Card>
     </Col>
   ));
@@ -64,6 +88,21 @@ export default function Cards() {
       <div className='row' style={rowStyle}>
         {cards}
       </div>
+      {products.length > 0 && (
+        <div style={checkoutSectionStyle}>
+          <h2>Checkout</h2>
+          <p style={checkoutAmountStyle}>
+            Total: &#8358;{totalAmount}
+          </p>
+          <Checkout />
+        </div>
+      )}
+      {products.length === 0 && (
+        <div style={emptyCartStyle}>
+          <div><BsBagDash size={185} /></div>
+         <p className='' style={{marginTop: '100px'}}> Your Bag is empty.</p>
+        </div>
+      )}
     </div>
   )
 }
