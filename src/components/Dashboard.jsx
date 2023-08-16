@@ -31,7 +31,7 @@ const headingStyle = {
 
 
 const imageContainerStyle = {
-  width: '40%',
+  width: '50%',
 };
 
 const imageStyle = {
