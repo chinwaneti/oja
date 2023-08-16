@@ -52,9 +52,8 @@ export default function Products() {
 
   return (
     <div>
-    <div style={{ marginTop: '50px', marginBottom: "50px"}}> </div>
     
-      <Container fluid style={{ padding: '15px', maxWidth: '100%', overflowX: 'hidden' }}>
+      <Container fluid style={{ padding: '15px', maxWidth: '100%', overflowX: 'hidden', marginTop: '100px' }}>
         <Row>{cards}</Row>
       </Container>
     </div>

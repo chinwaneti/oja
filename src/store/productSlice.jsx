@@ -50,7 +50,7 @@ const productSlice = createSlice({
       })
       .addCase(initiateCheckout.fulfilled, (state) => {
         state.checkoutStatus = 'success';
-        state.data = []; // Clear the cart items upon successful checkout
+        state.data = []; 
       })
       .addCase(initiateCheckout.rejected, (state) => {
         state.checkoutStatus = 'error';
