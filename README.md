@@ -1,6 +1,6 @@
 # Oja E-Commerce Web Application Readme
 
-Hey there! Welcome to the readme for my awesome Oja E-Commerce Web Application. Here, I'll guide you through the setup, functionalities, API integration, Redux state management, dynamic routing, and guest checkout process of my Ionic React-based web app.
+Hey there! Welcome to the readme for my awesome Oja E-Commerce Web Application. Here, I'll guide you through the setup, functionalities, API integration, Redux state management, dynamic routing, guest checkout process, challenges faced, and potential improvements of my Ionic React-based web app.
 
 ## Table of Contents
 1. [Setting Up and Getting Things Ready](#setting-up-and-getting-things-ready)
@@ -8,6 +8,8 @@ Hey there! Welcome to the readme for my awesome Oja E-Commerce Web Application. 
 3. [Talking to the API and Dynamic Routing](#talking-to-the-api-and-dynamic-routing)
 4. [Keeping Things Organized with Redux](#keeping-things-organized-with-redux)
 5. [Smooth Guest Checkout Experience](#smooth-guest-checkout-experience)
+6. [Challenges Faced](#challenges-faced)
+7. [Future Improvements](#future-improvements)
 
 ## Setting Up and Getting Things Ready
 First things first, let's roll up our sleeves and get the environment sorted out:
@@ -37,8 +39,20 @@ I've made sure checking out is as easy as pie:
 - Thanks to Redux, you won't lose your cart contents during checkout.
 - Once everything's good to go, I'll give you a high-five with a confirmation message!
 
-Feel free to dive into Oja's code and make it even better. 
+## Challenges Faced
+Building Oja came with its own set of challenges:
 
+- Managing the complexity of Redux state and actions.
+- Dealing with TypeScript's type system and ensuring type correctness.
+
+## Future Improvements
+With more time, I'd love to enhance Oja even further:
+- Implement user authentication for personalized experiences.
+- Add sorting and filtering options for product listings.
+- Expand payment methods for a seamless checkout process.
+- Incorporate automated testing for a robust codebase.
+
+Feel free to dive into Oja's code and make it even better.
 
 
 Happy coding!
