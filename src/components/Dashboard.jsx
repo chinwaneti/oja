@@ -42,7 +42,7 @@ const imageStyle = {
 export default function Dashboard() {
   return (
     <div>
-    <h1 className='' style={{marginTop: "150px", marginBottom:"50px"}}>Products Dashboard</h1>
+    <h1 className='' style={{marginTop: "50px", marginBottom:"50px"}}></h1>
       <div style={containerStyle}>
         <div style={contentStyle}>
           <p style={headingStyle}>
