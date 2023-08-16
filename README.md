@@ -37,7 +37,7 @@ I'm all about smooth sailing with Redux and Redux Toolkit:
 I've made sure checking out is as easy as pie:
 - I've expanded the guest checkout so it collects all the info I need – your name, email, and address.
 - Thanks to Redux, you won't lose your cart contents during checkout.
-- Once everything's good to go, I'll give you a high-five with a confirmation message!
+- Once everything's good to go, I'll give you a confirmation message!
 
 ## Challenges Faced
 Building Oja came with its own set of challenges:
