@@ -68,9 +68,7 @@ export default function Footer() {
               marginRight: '1rem',
             }}
           >
-            <a
-              href="/privacy-policy"
-              rel="noopener noreferrer"
+            <p
               style={{
                 textDecoration: 'none',
                 color: 'white',
@@ -79,7 +77,7 @@ export default function Footer() {
               }}
             >
               Privacy Policy
-            </a>
+            </p>
           </li>
           <li
             style={{
@@ -87,9 +85,7 @@ export default function Footer() {
               marginRight: '1rem',
             }}
           >
-            <a
-              href="/terms-of-service"
-              rel="noopener noreferrer"
+            <p
               style={{
                 textDecoration: 'none',
                 color: 'white',
@@ -98,16 +94,15 @@ export default function Footer() {
               }}
             >
               Terms of Service
-            </a>
+            </p>
           </li>
           <li
             style={{
               margin: '0',
             }}
           >
-            <a
+            <p
               href="/contact-us"
-              rel="noopener noreferrer"
               style={{
                 textDecoration: 'none',
                 color: 'white',
@@ -117,7 +112,7 @@ export default function Footer() {
               }}
             >
               Contact Us
-            </a>
+            </p>
           </li>
         </ul>
       </div>
