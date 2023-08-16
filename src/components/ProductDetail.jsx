@@ -59,7 +59,7 @@ function ProductDetail() {
 
   return (
     <div style={styles.container}>
-      <h2 style={{ marginBottom: '20px' }}>Product Detail Page</h2>
+      <h2 style={{ marginTop: '100px', marginBottom: "50px" }}>Product Detail Page</h2>
       <div>
         <img src={product.image} alt={product.title} style={styles.image} />
         <h3 style={styles.title}>{product.title}</h3>

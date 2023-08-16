@@ -2,8 +2,11 @@ import React from 'react';
 
 export default function Contact() {
   return (
+    <div >
+    
     <div
       style={{
+         marginTop: '100px', marginBottom: "50px" ,
         background: 'linear-gradient(to right, #3A1C71, #D76D77, #FFAF7B)',
         display: 'flex',
         justifyContent: 'center',
@@ -94,6 +97,6 @@ export default function Contact() {
           </button>
         </form>
       </div>
-    </div>
+    </div></div>
   );
 }

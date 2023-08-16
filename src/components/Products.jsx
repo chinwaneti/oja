@@ -52,6 +52,8 @@ export default function Products() {
 
   return (
     <div>
+    <div style={{ marginTop: '100px', marginBottom: "50px", fontSize: '3rem'}}> Happy Shopping!</div>
+    
       <Container fluid style={{ padding: '15px', maxWidth: '100%', overflowX: 'hidden' }}>
         <Row>{cards}</Row>
       </Container>

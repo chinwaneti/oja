@@ -85,6 +85,7 @@ export default function Cards() {
 
   return (
     <div style={containerStyle}>
+    <div style={{ marginTop: '100px', marginBottom: "50px", fontSize: '2rem'}}> Happy Shopping!</div>
       <div className='row' style={rowStyle}>
         {cards}
       </div>
