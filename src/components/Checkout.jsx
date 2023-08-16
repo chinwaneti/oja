@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { initiateCheckout, resetCheckoutStatus, setUserInformation } from '../store/productSlice';
+import { initiateCheckout, setUserInformation } from '../store/productSlice';
 
 export default function Checkout() {
   const dispatch = useDispatch();

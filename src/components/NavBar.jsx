@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -14,31 +14,27 @@ export default function NavBar() {
   const [products, setProducts] = useState([]);
   const [searchResults, setSearchResults] = useState([]);
 
-  useEffect(() => {
-    fetchProducts();
-  }, []);
-
-  useEffect(() => {
-    filterProducts();
-  }, [searchQuery]);
-
-  const fetchProducts = () => {
-    fetch('https://fakestoreapi.com/products')
-      .then(response => response.json())
-      .then(data => {
-        setProducts(data);
-      })
-      .catch(error => {
-        console.error('Error fetching products:', error);
-      });
+  const fetchProducts = async () => {
+    try {
+      const response = await fetch('https://fakestoreapi.com/products');
+      const data = await response.json();
+      setProducts(data);
+    } catch (error) {
+      console.error('Error fetching products:', error);
+    }
   };
 
-  const filterProducts = () => {
+  const filterProducts = useCallback(() => {
     const filteredProducts = products.filter(product =>
       product.title.toLowerCase().includes(searchQuery.toLowerCase())
     );
     setSearchResults(filteredProducts);
-  };
+  }, [products, searchQuery]);
+
+  useEffect(() => {
+    fetchProducts();
+    filterProducts();
+  }, [filterProducts]);
 
   return (
     <Navbar expand="lg" style={{ position: 'fixed', width: '100%', top: 0, zIndex: 1000 }} className="bg-body-tertiary">

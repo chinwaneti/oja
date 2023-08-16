@@ -27,7 +27,7 @@ export default function Footer() {
             color: 'hotpink',
           }}
         >
-         Oja
+          Oja
         </h2>
         <p
           style={{
@@ -69,7 +69,8 @@ export default function Footer() {
             }}
           >
             <a
-              href="#"
+              href="/privacy-policy"
+              rel="noopener noreferrer"
               style={{
                 textDecoration: 'none',
                 color: 'white',
@@ -87,7 +88,8 @@ export default function Footer() {
             }}
           >
             <a
-              href="#"
+              href="/terms-of-service"
+              rel="noopener noreferrer"
               style={{
                 textDecoration: 'none',
                 color: 'white',
@@ -104,7 +106,8 @@ export default function Footer() {
             }}
           >
             <a
-              href="#"
+              href="/contact-us"
+              rel="noopener noreferrer"
               style={{
                 textDecoration: 'none',
                 color: 'white',

@@ -73,7 +73,7 @@ export default function ProfilePage() {
               color: "gray",
             }}
           >
-            <a href="#">Forgot Password?</a>
+            <a href="/Contact">Forgot Password?</a>
           </p>
         </div>
       </div>

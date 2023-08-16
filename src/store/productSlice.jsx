@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import StatusCode from "../utils/StatusCode"
+import StatusCode from '../utils/StatusCode';
 
 const initialState = {
   data: [],
@@ -18,13 +18,8 @@ export const setProducts = createAsyncThunk('products/get', async () => {
   return result;
 });
 
-export const initiateCheckout = createAsyncThunk('cart/checkout', async (_, { getState }) => {
-  const { cart } = getState();
-  
-  // Simulate a checkout process, replace with your actual API call or logic
-  // ...
-
-  return 'success'; // You can modify this value based on the outcome
+export const initiateCheckout = createAsyncThunk('cart/checkout', async () => {
+  return 'success';
 });
 
 const productSlice = createSlice({
